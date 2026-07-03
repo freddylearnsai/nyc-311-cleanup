@@ -2,7 +2,9 @@
 
 A documented, repeatable cleaning pipeline for one month of NYC 311 service requests — built in public by [freddyxai](https://freddyxai.com/work-with-me).
 
-Status: build in progress. Receipts land in `receipts.md` when the run completes.
+**Receipts:** see [receipts.md](receipts.md) — every number measured from the run.
+
+Built by [freddyxai](https://freddyxai.com) — your data team, on demand. This is the shape of a [$500 starter cleanup](https://freddyxai.com/work-with-me): one dataset, cleaned and validated, with the report to prove it.
 
 ## Reproduce
 
