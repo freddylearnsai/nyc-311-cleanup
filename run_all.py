@@ -8,7 +8,7 @@ t0 = time.time()
 before = json.loads(py("checks.py", "data/raw.csv", "before"))
 fixes = json.loads(py("clean.py"))
 after = json.loads(py("checks.py", "data/clean.parquet", "after"))
-mins = round((time.time() - t0) / 60, 1)
+secs = round(time.time() - t0, 1)
 
 receipts = f"""# Receipts — NYC 311 cleanup (May 2026 slice)
 
@@ -24,7 +24,7 @@ Measured from the actual run on this repo. Reproduce with `python run_all.py`.
 | Out-of-bbox coords nulled | {fixes['out_of_bbox_coords_nulled']} |
 | % passing all rules — before | {before['pct_passing_all']}% |
 | % passing all rules — after | {after['pct_passing_all']}% |
-| Pipeline runtime (fetch excluded) | {mins} min |
+| Pipeline runtime (fetch excluded) | {secs} s |
 
 Rule-by-rule detail: [before](reports/before-report.md) · [after](reports/after-report.md)
 """

@@ -12,7 +12,7 @@ Measured from the actual run on this repo. Reproduce with `python run_all.py`.
 | Out-of-bbox coords nulled | 0 |
 | % passing all rules — before | 99.99% |
 | % passing all rules — after | 100.0% |
-| Pipeline runtime (fetch excluded) | 0.0 min |
+| Pipeline runtime (fetch excluded) | 1.4 s |
 
 Rule-by-rule detail: [before](reports/before-report.md) · [after](reports/after-report.md)
 
